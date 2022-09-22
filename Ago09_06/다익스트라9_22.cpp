@@ -121,16 +121,17 @@ public:
 	}
 	void chooseVertex()
 	{
-		//int min = INF;
-		//int minpos = -1;
-		//for (int i = 0; i < size; i++)
-		//{
-		//	if ()
-		//	{
-
-		//	}
-		//}
-		//return minpos;
+		int min = 9999;
+		int minpos = -1;
+		for (int i = 0; i < size; i++)
+		{
+			if (!found[i]&& min>dist[i])
+			{
+				min = dist[i];
+				minpos = i;
+			}
+		}
+		return minpos;
 	}
 };
 int main(void)
