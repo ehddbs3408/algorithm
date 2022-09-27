@@ -109,6 +109,7 @@ public:
 class shotestPath : public AdjMatGraph
 {
 	int dist[MAX_VTXS];
+	int parent[MAX_VTXS];
 	bool found[MAX_VTXS];
 public:
 	void printDistance()
@@ -119,7 +120,7 @@ public:
 		}
 		cout << endl;
 	}
-	void chooseVertex()
+	int chooseVertex()
 	{
 		int min = 9999;
 		int minpos = -1;
@@ -133,28 +134,47 @@ public:
 		}
 		return minpos;
 	}
+	void dijikstra(int start,int end)
+	{
+		for (int i = 0; i < size; i++)
+		{
+			dist[i] = getEdge(start, i);
+			found[i] = false;
+		}
+		fill_n(parent, size, -1);
+		found[start] = true;
+		dist[start] = 0;
+		parent[start] = start;
+		int next, current = start;
+		cout << "정점에서 시작?!!" << endl;
+		for (int i = 0; i < size; i++)
+		{
+			if (current == end)
+			{
+				cout << "목적 정점 " << end << "에 도착" << endl;
+				break;
+			}
+			cout << "Step " << i + 1 << " : ";
+			printDistance();
+			next = chooseVertex();
+			found[next] = true;
+			for (int w = 0; w < size; w++)
+			{
+				if (found[w] == false)
+				{
+					if (dist[next] + getEdge(next, w) < dist[w])
+					{
+						dist[w] = dist[next] + getEdge(next, w);
+						parent[w] = next;
+					}
+				}
+					
+			}
+			current = next;
+		}
+	}
 };
 int main(void)
 {
-	SearchGraph p;
-
-	for (int i = 0; i < 4; i++)
-	{
-		p.insertVertex('A' + i);
-	}
-	p.insertEdge(0, 1);
-	p.insertEdge(0, 3);
-	p.insertEdge(1, 2);
-	p.insertEdge(1, 3);
-	p.insertEdge(2, 3);
-
-	cout << "인접 행렬로 표현한 그래프" << endl;
-	p.display();
-	cout << "DFS 탐색 => ";
-	p.resetVisited();
-	p.DFS(0);
-	cout << endl;
-	cout << "BFS 탐색 => ";
-	p.resetVisited();
-	p.BFS(0);
+	
 }
