@@ -5,6 +5,7 @@ using namespace std;
 #define MAX_VTXS 256
 #define INF = 9999;
 
+
 class AdjMatGraph
 {
 protected:
@@ -167,6 +168,7 @@ public:
 						dist[w] = dist[next] + getEdge(next, w);
 						parent[w] = next;
 					}
+					int asd = 0;
 				}
 					
 			}
