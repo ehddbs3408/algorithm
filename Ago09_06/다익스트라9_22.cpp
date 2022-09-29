@@ -5,6 +5,10 @@ using namespace std;
 #define MAX_VTXS 256
 #define INF = 9999;
 
+int V, E, start, u, v, w;
+vector<pair<int, int>> weight[20001];
+//priority_queue<pair<int,int>> , vector<pair<int,int>> ,
+
 
 class AdjMatGraph
 {
@@ -168,7 +172,6 @@ public:
 						dist[w] = dist[next] + getEdge(next, w);
 						parent[w] = next;
 					}
-					int asd = 0;
 				}
 					
 			}
@@ -178,5 +181,9 @@ public:
 };
 int main(void)
 {
-	
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+
+
 }
