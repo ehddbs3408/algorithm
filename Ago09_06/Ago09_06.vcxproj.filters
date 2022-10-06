@@ -36,5 +36,8 @@
     <ClCompile Include="함수의 연속 오차구하기 9_23.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="A_Star.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
