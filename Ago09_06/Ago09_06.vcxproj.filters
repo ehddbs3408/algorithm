@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\정렬알고리즘">
+      <UniqueIdentifier>{1473380e-428a-4b36-9a97-474e6b31ad47}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2차원 배열 9_6.cpp">
@@ -44,6 +47,21 @@
     </ClCompile>
     <ClCompile Include="Prim.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="병합 정렬.cpp">
+      <Filter>소스 파일\정렬알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="퀵.cpp">
+      <Filter>소스 파일\정렬알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="버블.cpp">
+      <Filter>소스 파일\정렬알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="선택.cpp">
+      <Filter>소스 파일\정렬알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="삽입.cpp">
+      <Filter>소스 파일\정렬알고리즘</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
