@@ -72,5 +72,8 @@
     <ClCompile Include="수 정렬하기2.cpp">
       <Filter>소스 파일\백준 문제</Filter>
     </ClCompile>
+    <ClCompile Include="수 찾기.cpp">
+      <Filter>소스 파일\백준 문제</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
