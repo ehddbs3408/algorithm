@@ -39,7 +39,7 @@ int main(void)
 	{
 		cin >> a[i];
 	}
-	Sort(n);
+	merge(n);
 
 
 	cin >> n2;
