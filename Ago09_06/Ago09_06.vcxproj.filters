@@ -78,5 +78,8 @@
     <ClCompile Include="베스트 셀러.cpp">
       <Filter>소스 파일\백준 문제</Filter>
     </ClCompile>
+    <ClCompile Include="나는야 포켓몬 마스터 이다솜.cpp">
+      <Filter>소스 파일\백준 문제</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
