@@ -84,5 +84,14 @@
     <ClCompile Include="듣보잡.cpp">
       <Filter>소스 파일\백준 문제</Filter>
     </ClCompile>
+    <ClCompile Include="온라인 실습.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="온라인 실습 2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="숫자카드2.cpp">
+      <Filter>소스 파일\백준 문제</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
