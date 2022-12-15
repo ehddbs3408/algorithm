@@ -96,5 +96,20 @@
     <ClCompile Include="1072_게임.cpp">
       <Filter>소스 파일\백준 문제</Filter>
     </ClCompile>
+    <ClCompile Include="파도반 수열cpp.cpp">
+      <Filter>소스 파일\백준 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="평범한 배낭.cpp">
+      <Filter>소스 파일\백준 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="문제 체육복.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="동전.cpp">
+      <Filter>소스 파일\백준 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="완주하지 못한 선수.cpp">
+      <Filter>소스 파일\백준 문제</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
